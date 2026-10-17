@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="mn">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Монгол Шатрын Сургууль — Нүүр</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;700&family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <img src="assets/logo.svg" alt="Монгол Шатрын Сургууль" class="logo">
+        <div class="brand-text">
+          <h1>Монгол Шатрын Сургууль</h1>
+          <p class="tag">Хүүхдэд таатай, анхан шатны хичээлүүд</p>
+        </div>
+      </div>
+      <nav class="main-nav">
+        <a href="#courses">Курс</a>
+        <a href="#about">Бидний тухай</a>
+        <a href="#contact">Холбоо барих</a>
+        <a href="#member" class="btn secondary">Нэвтрэх</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h2>Шатрын анхан шат — Хөгжилтэй бөгөөд амархан</h2>
+        <p>Тоглолт эхлэхэд заавал мэдэх 10 зүйл: дүрсүүд, хөдөлгөөн, энгийн стратеги.</p>
+        <a href="#courses" class="btn primary">Курсуудыг харах</a>
+      </div>
+    </section>
+
+    <section id="courses" class="container courses">
+      <h3>Курсууд</h3>
+      <div class="cards">
+        <article class="card">
+          <h4>Анхан шат — 4 хичээл</h4>
+          <p>Шатрын дүрсүүд, эхний хөдөлгөөнүүд, энгийн тактик. 6 хүртэлх насны хүүхдэд тохиромжтой.</p>
+          <div class="card-actions">
+            <button class="btn primary" data-course="Анхан шат">Суралцаж эхлэх</button>
+            <button class="btn" data-course="Анхан шат">Дэлгэрэнгүй</button>
+          </div>
+        </article>
+
+        <article class="card">
+          <h4>Сургагчийн курс — 8 хичээл</h4>
+          <p>Хөдөлгөөн бүрийн жишээ, энгийн хамгаалалт ба довтолгоо.</p>
+          <div class="card-actions">
+            <button class="btn primary" data-course="Сургагчийн курс">Суралцаж эхлэх</button>
+            <button class="btn" data-course="Сургагчийн курс">Дэлгэрэнгүй</button>
+          </div>
+        </article>
+
+        <article class="card">
+          <h4>Өөртөө тулгарах тактик — 6 хичээл</h4>
+          <p>Шатралтын загварууд, хялбар тактикийг сурах.</p>
+          <div class="card-actions">
+            <button class="btn primary" data-course="Тактик">Суралцаж эхлэх</button>
+            <button class="btn" data-course="Тактик">Дэлгэрэнгүй</button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="lesson-demo" class="container demo">
+      <h3>Демо хичээл — Шатрын Хаан ба Хулгана</h3>
+      <p>Жишээ: Хаан (K) болон Хулгана (P) хөдөлгөөн бусад дүрсүүд энгийн дүрслэлтэй.</p>
+
+      <div class="board-wrapper">
+        <div id="board" class="board" aria-label="Шатрын самбар"></div>
+        <div class="legend">
+          <p>Тоглоомын дүрслэл нь энгийн бөгөөд суралцалтын зорилготой.</p>
+        </div>
+      </div>
+
+      <div class="lesson-actions">
+        <button id="resetBoard" class="btn">Самбарыг дахин тохируулах</button>
+      </div>
+    </section>
+
+    <section id="about" class="container about">
+      <h3>Бидний тухай</h3>
+      <p>Монгол Шатрын Сургууль нь хүүхдэд ээлтэй хэлбэрээр шатрын үндэсийг заадаг. Бид богино, ойлгомжтой хичээл, гэрийн даалгавар, багшийн зөвлөгөөнд төвлөрнө.</p>
+    </section>
+
+    <section id="contact" class="container contact">
+      <h3>Бүртгүүлэх</h3>
+      <p>Доорх маягтыг бөглөх замаар курсанд бүртгэж, гар утасны дугаараар холбоо барина.</p>
+      <form id="signupForm" class="form">
+        <label>Нэр
+          <input type="text" name="name" id="name" required>
+        </label>
+        <label>Электрон шуудан
+          <input type="email" name="email" id="email" required>
+        </label>
+        <label>Хүүхдийн настай
+          <input type="text" name="age" id="age" placeholder="Жишээ: 7" required>
+        </label>
+        <label>Сонгосон курс
+          <select id="courseSelect" name="course">
+            <option>Анхан шат</option>
+            <option>Сургагчийн курс</option>
+            <option>Тактик</option>
+          </select>
+        </label>
+        <div class="form-actions">
+          <button type="submit" class="btn primary">Бүртгүүлэх</button>
+          <button type="button" id="payBtn" class="btn">Төлбөр хийх (QR/Банк)</button>
+        </div>
+      </form>
+    </section>
+
+    <section id="member" class="container member">
+      <h3>Гишүүдийн хэсэг (Туршилт)</h3>
+      <p>Энд хэрэглэгч нэвтэрсний дараа курс материал, видео, дасгал ажиллах хэсгийг харах ёстой. Одоогоор бэлэн биш — backend шаардлагатай.</p>
+      <p><strong>Санамж:</strong> Нэвтрэх, хэрэглэгчийн баталгаажуулалт, плаформын төлбөр баталгаажуулалт нь сервер талын шийдэл шаарддаг.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>Монгол Шатрын Сургууль © <span id="year"></span> — Холбоо: info@example.mn</p>
+    </div>
+  </footer>
+
+  <!-- Modals and hidden bank info -->
+  <div id="bankModal" class="modal" aria-hidden="true">
+    <div class="modal-content">
+      <button class="modal-close" aria-label="Close">✕</button>
+      <h4>Төлбөр — Банк шилжүүлэг / QR</h4>
+      <p>Бид төлбөрийг гар аргаар хүлээн авна. Доорх мэдээллийг ашиглан банк шилжүүлэг хийх эсвэл QR кодыг сканнерлана уу:</p>
+      <ul>
+        <li>Банк: Монгол Улсын Хаан банк</li>
+        <li>Дансны дугаар: 1234 5678 9012</li>
+        <li>Сүлжээний заалт: Монгол Шатрын Сургууль - Курс</li>
+      </ul>
+      <div class="qr-wrap">
+        <img src="assets/qr.svg" alt="QR төлбөрийн жишээ" class="qr">
+      </div>
+      <p class="note">Төлбөр хийсний дараа захиалгын талаар бидэнд мэйл илгээнэ үү. (Төлбөр баталгаажуулалт нь сервер талын ажлыг шаарддаг.)</p>
+    </div>
+  </div>
+
+  <script src="js/scripts.js"></script>
+</body>
+</html>
