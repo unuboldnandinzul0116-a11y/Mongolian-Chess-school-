@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="mn">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Хяналтын самбар | Монгол Шатрын Сургууль</title>
+    <meta name="description" content="Хүүхдийн шатрын сургалтын dashboard." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a href="index.html" class="brand" aria-label="Монгол Шатрын Сургууль">
+          <img src="assets/logo.svg" alt="Монгол Шатрын Сургууль лого" class="brand-logo" />
+          <div>
+            <span class="brand-title">Монгол Шатрын Сургууль</span>
+            <small class="brand-subtitle">Kids & Beginners</small>
+          </div>
+        </a>
+
+        <nav class="main-nav" aria-label="Үндсэн навигаци">
+          <a href="index.html">Нүүр</a>
+          <a href="course.html">Курс</a>
+          <a href="dashboard.html" class="active">Хяналтын самбар</a>
+          <a href="admin.html">Админ</a>
+          <a href="login.html" class="btn btn-ghost">Нэвтрэх</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="dashboard-shell">
+      <div class="container dashboard-grid">
+        <aside class="sidebar">
+          <div class="profile-box">
+            <div class="avatar">М</div>
+            <div>
+              <h3 id="student-name">Миний хяналтын самбар</h3>
+              <p>Анхан шат</p>
+            </div>
+          </div>
+
+          <nav class="side-nav">
+            <a href="#overview" class="active">Ерөнхий</a>
+            <a href="#courses">Курс</a>
+            <a href="#progress">Ахиц</a>
+            <a href="#rewards">Шагнал</a>
+          </nav>
+        </aside>
+
+        <section class="dashboard-content">
+          <div class="dashboard-top">
+            <div>
+              <span class="eyebrow">Сайхан байна</span>
+              <h1 id="welcome-title">Өнөөдрийн ахиц</h1>
+            </div>
+            <button class="btn btn-primary" data-open-modal="payment-modal">Төлбөрийн QR</button>
+          </div>
+
+          <div class="stats-grid">
+            <div class="stat-card">
+              <span>Бүрэн гүйцэтгэсэн</span>
+              <strong>3 / 8</strong>
+            </div>
+            <div class="stat-card">
+              <span>Нийт оноо</span>
+              <strong>87%</strong>
+            </div>
+            <div class="stat-card">
+              <span>Дараагийн хичээл</span>
+              <strong>Хамгаалах</strong>
+            </div>
+          </div>
+
+          <div class="lesson-list" id="courses">
+            <div class="lesson-item done">
+              <div>
+                <small>Хичээл 1</small>
+                <h3>Шатрын дүрсүүд</h3>
+              </div>
+              <span>Гүйцэтгэлтэй</span>
+            </div>
+            <div class="lesson-item done">
+              <div>
+                <small>Хичээл 2</small>
+                <h3>Хөдөлгөөн</h3>
+              </div>
+              <span>Гүйцэтгэлтэй</span>
+            </div>
+            <div class="lesson-item active">
+              <div>
+                <small>Хичээл 3</small>
+                <h3>Хамгаалах</h3>
+              </div>
+              <span>Үргэлжилж байна</span>
+            </div>
+            <div class="lesson-item">
+              <div>
+                <small>Хичээл 4</small>
+                <h3>Довтлох</h3>
+              </div>
+              <span>Цаашид</span>
+            </div>
+          </div>
+
+          <div class="progress-box" id="progress">
+            <h3>Ахицын график</h3>
+            <div class="progress-row">
+              <span>Логик</span>
+              <div class="meter"><span style="width: 82%"></span></div>
+            </div>
+            <div class="progress-row">
+              <span>Стратеги</span>
+              <div class="meter"><span style="width: 71%"></span></div>
+            </div>
+            <div class="progress-row">
+              <span>Тоглоом</span>
+              <div class="meter"><span style="width: 65%"></span></div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <div class="modal" id="payment-modal" aria-hidden="true">
+      <div class="modal-card">
+        <button class="modal-close" aria-label="Хаах">×</button>
+        <h3>Төлбөрийн QR</h3>
+        <img src="assets/qr.svg" alt="QR код" class="qr-image large" />
+        <p>Банкны шилжүүлэг хийсний дараа баримтаа дасгалын админд илгээнэ.</p>
+        <p class="tiny-note">Энэ нь frontend demo-only. Backend-тай цуврал баталгаажуулалт шаардлагатай.</p>
+      </div>
+    </div>
+
+    <script src="js/scripts.js"></script>
+  </body>
+</html>

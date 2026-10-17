@@ -1,44 +1,49 @@
-# Монгол Шатрын Сургууль — Starter сайт
+# Монгол Шатрын Сургууль — polished starter v2
 
-Энэ репозиторт эхний статик вэб хувилбар нэмэгдсэн.
+Энэ төсөл нь HTML, CSS, JavaScript ашиглан бүтээгдсэн frontend starter юм. Дүрэм/систем нь дараах байдлаар ажиллана:
 
-Агуулга:
-- index.html — Нүүр хуудас (HTML)
-- css/styles.css — Загвар (CSS)
-- js/scripts.js — Клиент талын интерактив (JavaScript)
-- assets/logo.svg, assets/qr.svg — Лого, QR жишээ
+- index.html — нүүр хуудас
+- course.html — курс дэлгэрэнгүй
+- dashboard.html — суралцагчийн dashboard
+- login.html — нэвтрэх/бүртгүүлэх UI
+- admin.html — админ mock panel
+- css/styles.css — бүх сайтын стиль
+- js/scripts.js — FAQ, modal, mock login/signup, localStorage demo
+- assets/logo.svg, assets/qr.svg — лого, QR жишээ
 
-Ямар зүйл ажиллана (дараалсан):
-- Сайтын нүүр хуудас, курсын жагсаалт, демо самбар (клиент тал дээр визуал)
-- Бүртгэлийн маягт — локалд хадгална (localStorage) зөвхөн демо зориулалттай
-- QR болон банк шилжүүлгийн мэдээллийг харуулах модал
+Ажлын чанар:
+- Сайтын нүүр, курс, dashboard, login/signup, payment modal бүгд frontend дээр ажилладаг.
+- Бүртгэл, нэвтрэх болон төлбөрийн баталгаажуулалт localStorage demo байдлаар хийгдсэн.
+- Бодит backend integration шаардлагатай талуудыг UI-ээр ялган харуулсан.
 
-Ямар зүйл шаардлагатай backend (ажиллагдаагүй):
-- Бүртгэлүүдийг сервер дээр хадгалах, имэйл илгээх
-- Төлбөрийн баталгаажуулалт (QR/банк шалгах) — автомат шалгалт, захиалга/статус
-- Хэрэглэгчийн нэвтрэлтийн систем (signup/login/session)
+Backend шаардлагатай хэсгүүд:
+- User authentication (email/password/session)
+- Admin authorization
+- Payment verification (QR/Bank manual payment confirmation)
+- Database for students, course enrollments, payments
+- Email approval pipeline
 
-Хэрхэн GitHub дээр файлуудыг гаргах (вебээр):
-1. Репозиторт орно: https://github.com/unuboldnandinzul0116-a11y/Mongolian-Chess-school-
-2. "Add file" -> "Create new file" дээр дар
-3. Файлын нэрийг оруул (жишээ: `index.html`) ба дээрх кодыг копи-пэйст хийнэ
-4. Доор commit мессеж бичиж "Commit new file" дар
-5. "Add file" давтан хийгээд `css/styles.css`, `js/scripts.js`, `assets/logo.svg`, `assets/qr.svg`, `README.md` файлуудыг нэмнэ
+Хэрхэн GitHub дээр үүсгэх:
+1. Репозиторт очно: https://github.com/unuboldnandinzul0116-a11y/Mongolian-Chess-school-
+2. branch `polished-v2`-ыг ашиглана. Хэрэв шинэ branch ашиглахгүй бол default branch дээр push хийж болно.
+3. Add file -> Create new file товшино.
+4. index.html, course.html, dashboard.html, login.html, admin.html, css/styles.css, js/scripts.js, assets/logo.svg, assets/qr.svg файлуудыг үүсгэнэ.
+5. Commit дараад push хийнэ.
 
-Хэрхэн Git ашиглан (локал ба команд):
-1. GitHub репог clone хийнэ:
-   git clone https://github.com/unuboldnandinzul0116-a11y/Mongolian-Chess-school-.git
-2. Репо руу ор:
-   cd Mongolian-Chess-school-
-3. Шинэ файлуудыг үүсгэж нэмнэ (жишээ дээрх файлуудыг local-д үүсгэнэ)
-4. Git-д нэмээд commit хийнэ:
-   git add .
-   git commit -m "Initial static site: homepage, styles, scripts, assets"
-   git push origin main
+Локал дээр ажиллуулах:
+- VS Code дээр проект нээж, http server ажиллуулах:
+  python -m http.server 8000
+- Дараа нь browser-ээр:
+  http://localhost:8000/index.html
 
-Дараагийн алхмууд (зөвлөмж):
-- Backend (Node/Express, Django, Rails) ашиглан бүртгэл/нэвтрэх болон төлбөр баталгаажуулах талийг хийх
-- Төлбөр: QR скан хийхэд төлбөрийг баталгаажуулах webhook эсвэл администраторт шүүлт хийх процесс хэрэгтэй
-- Хэрэглэгчийн нууцлал, GDPR/MN датаны хамгаалалын бодлого хэрэглэх
+Төлбөрийн хэлбэр:
+- Bank transfer / QR manual flow нарын UI байна.
+- Баримт баталгаажуулах, автомат статусын шинэчлэлт backend-д хийгдэнэ.
 
-Хэрэв та хүсвэл би эдгээр файлуудыг тус репозиторид шууд байршуулж, commit хийнэ.
+Хэрэв та хүсвэл дараагийн алхамд би:
+- real login/signup backend (Node.js/Express or Django)
+- admin dashboard API
+- payment confirmation flow
+- MongoDB/PostgreSQL схем
+- production deploy setup
+-ийг төлөвлөж, код бичиж болно.

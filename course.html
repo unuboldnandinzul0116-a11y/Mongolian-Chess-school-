@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="mn">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Курс | Монгол Шатрын Сургууль</title>
+    <meta name="description" content="Монгол Шатрын Сургууль — курсын дэлгэрэнгүй мэдээлэл, хичээлийн блокууд, үнэ, сургалтын бүтэц." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a href="index.html" class="brand" aria-label="Монгол Шатрын Сургууль">
+          <img src="assets/logo.svg" alt="Монгол Шатрын Сургууль лого" class="brand-logo" />
+          <div>
+            <span class="brand-title">Монгол Шатрын Сургууль</span>
+            <small class="brand-subtitle">Kids & Beginners</small>
+          </div>
+        </a>
+
+        <nav class="main-nav" aria-label="Үндсэн навигаци">
+          <a href="index.html">Нүүр</a>
+          <a href="course.html" class="active">Курс</a>
+          <a href="dashboard.html">Хяналтын самбар</a>
+          <a href="admin.html">Админ</a>
+          <a href="login.html" class="btn btn-ghost">Нэвтрэх</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="page-shell">
+      <section class="container course-hero">
+        <div>
+          <span class="eyebrow">Анхан шат</span>
+          <h1>Шатрын эхний 8 хичээл</h1>
+          <p>Хүүхэд болон анхан шатны суралцагчдад зориулагдсан шатрын үндсийг энгийн тайлбараар заана.</p>
+          <div class="cta-row">
+            <button class="btn btn-primary" data-open-modal="payment-modal">Төлбөр төлөх</button>
+            <a href="login.html" class="btn btn-secondary">Бүртгэл үүсгэх</a>
+          </div>
+        </div>
+        <div class="course-summary-card">
+          <h3>Курсын агуулга</h3>
+          <ul>
+            <li>Шатрын дүрсүүд, урт, ширхэг</li>
+            <li>Зөв хөдөлгөөн, хувилбар</li>
+            <li>Гэрийн даалгавар, тоглоом</li>
+            <li>Хичээлийн дараах шалгалт</li>
+          </ul>
+          <div class="price-row big-price">
+            <strong>120,000₮</strong>
+            <span>1 сарын хичээл</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="container section">
+        <div class="section-heading left">
+          <span class="eyebrow">Хичээлийн бүтэц</span>
+          <h2>Хичээл тус бүрийн зорилго</h2>
+        </div>
+
+        <div class="module-list">
+          <article class="module-item">
+            <span>01</span>
+            <div>
+              <h3>Шатрын дүрсүүд</h3>
+              <p>Хик, тэрс, хамгаалалт, даалгавар.</p>
+            </div>
+          </article>
+          <article class="module-item">
+            <span>02</span>
+            <div>
+              <h3>Хөдөлгөөн</h3>
+              <p>Хаан, хатан, хулганы хөдөлгөөн, зөв байрлал.</p>
+            </div>
+          </article>
+          <article class="module-item">
+            <span>03</span>
+            <div>
+              <h3>Хамгаалах</h3>
+              <p>Өөрийн хүнд хохирол учруулахгүй, хамгаалах арга.</p>
+            </div>
+          </article>
+          <article class="module-item">
+            <span>04</span>
+            <div>
+              <h3>Довтлох</h3>
+              <p>Товчооноослуулах, шахалт, аюулгийн дараалал.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <div class="modal" id="payment-modal" aria-hidden="true">
+      <div class="modal-card">
+        <button class="modal-close" aria-label="Хаах">×</button>
+        <h3>Төлбөрийн QR</h3>
+        <img src="assets/qr.svg" alt="QR" class="qr-image large" />
+        <p>Гарын шилжүүлэг: 1234 5678 9012</p>
+        <p class="tiny-note">Энэ нь frontend demo гэсэн үг. Бодит төлбөрийг backend-аар баталгаажуулна.</p>
+      </div>
+    </div>
+
+    <script src="js/scripts.js"></script>
+  </body>
+</html>

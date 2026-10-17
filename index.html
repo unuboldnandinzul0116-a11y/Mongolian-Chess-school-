@@ -1,153 +1,288 @@
 <!doctype html>
 <html lang="mn">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Монгол Шатрын Сургууль — Нүүр</title>
-  <link rel="stylesheet" href="css/styles.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;700&family=Nunito:wght@400;700&display=swap" rel="stylesheet">
-</head>
-<body>
-  <header class="site-header">
-    <div class="container header-inner">
-      <div class="brand">
-        <img src="assets/logo.svg" alt="Монгол Шатрын Сургууль" class="logo">
-        <div class="brand-text">
-          <h1>Монгол Шатрын Сургууль</h1>
-          <p class="tag">Хүүхдэд таатай, анхан шатны хичээлүүд</p>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Монгол Шатрын Сургууль</title>
+    <meta name="description" content="Монгол Шатрын Сургууль — хүүхдэд болон анхлан суралцагчдад зориулсан шатрын онлайн курс." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a href="index.html" class="brand" aria-label="Монгол Шатрын Сургууль">
+          <img src="assets/logo.svg" alt="Монгол Шатрын Сургууль лого" class="brand-logo" />
+          <div>
+            <span class="brand-title">Монгол Шатрын Сургууль</span>
+            <small class="brand-subtitle">Kids & Beginners</small>
+          </div>
+        </a>
+
+        <nav class="main-nav" aria-label="Үндсэн навигаци">
+          <a href="index.html" class="active">Нүүр</a>
+          <a href="#courses">Курс</a>
+          <a href="#why-us">Яагаад</a>
+          <a href="#payment">Төлбөр</a>
+          <a href="course.html">Дэлгэрэнгүй</a>
+          <a href="login.html" class="btn btn-ghost">Нэвтрэх</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <span class="eyebrow">Хүүхдэд ээлтэй шатрын сургалт</span>
+            <h1>Шатрын анхлан суралцагчдад зориулсан хөгжилтэй онлайн курс</h1>
+            <p>
+              Бид хүүхдүүдийг аюулгүй, ойлгомжтой, шагайж сурахад чиглэсэн богино бөгөөд зугаатай хичээлүүдээр
+              шатрын үндсэн дүрмийг зааж, стратегийн анхан шатны ойлголтыг өгдөг.
+            </p>
+            <div class="cta-row">
+              <a href="#courses" class="btn btn-primary">Курс сонгох</a>
+              <a href="login.html" class="btn btn-secondary">Бүртгүүлэх</a>
+            </div>
+            <ul class="hero-metrics">
+              <li><strong>4+</strong><span>жилийн сургалт</span></li>
+              <li><strong>1200+</strong><span>оюутан</span></li>
+              <li><strong>8</strong><span>хичээлийн блок</span></li>
+            </ul>
+          </div>
+
+          <div class="hero-card">
+            <div class="mini-board" aria-label="Шатрын самбар">
+              <div class="square light">♙</div>
+              <div class="square dark">♟</div>
+              <div class="square light">♘</div>
+              <div class="square dark">♔</div>
+              <div class="square light">♕</div>
+              <div class="square dark">♗</div>
+              <div class="square light">♖</div>
+              <div class="square dark">♖</div>
+              <div class="square dark">♔</div>
+              <div class="square light">♙</div>
+              <div class="square dark">♙</div>
+              <div class="square light">♙</div>
+              <div class="square dark">♟</div>
+              <div class="square light">♟</div>
+              <div class="square dark">♟</div>
+              <div class="square light">♟</div>
+            </div>
+            <div class="hero-card-bottom">
+              <span class="tag">Долоо хоногийн хичээл</span>
+              <h3>Шатрын эхний 10 алхам</h3>
+              <p>Нэг хичээл 20-30 минут, хүүхдэд ээлтэй, амархан ойлгомжтой.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="courses" class="section">
+        <div class="container">
+          <div class="section-heading">
+            <span class="eyebrow">Курс</span>
+            <h2>Хүүхэд болон анхлан суралцагчдад тохирсон 3 курс</h2>
+          </div>
+
+          <div class="course-grid">
+            <article class="course-card featured">
+              <div class="course-header">
+                <span class="pill">Түгээмэл</span>
+                <h3>Анхан шат</h3>
+              </div>
+              <p>Дүрсүүд, хөдөлгөөн, энгийн тактик, 4 долоо хоногийн сургалт.</p>
+              <div class="price-row">
+                <strong>120,000₮</strong>
+                <span>сарын хичээл</span>
+              </div>
+              <ul>
+                <li>Шатрын 6 үндсэн дүрс</li>
+                <li>Хүүхэд ээлтэй видеонууд</li>
+                <li>Гэрийн даалгавар</li>
+              </ul>
+              <a href="course.html" class="btn btn-primary">Суралцах</a>
+            </article>
+
+            <article class="course-card">
+              <div class="course-header">
+                <span class="pill alt">Төрөлжсөн</span>
+                <h3>Сургагчийн курс</h3>
+              </div>
+              <p>Энгийн хамгаалалт, довтолгоо, өрсөлдөгчийг унших стратеги хөгжүүлэх.</p>
+              <div class="price-row">
+                <strong>180,000₮</strong>
+                <span>2 сарын курс</span>
+              </div>
+              <ul>
+                <li>8 хичээл</li>
+                <li>Үнэлгээтэй дасгал</li>
+                <li>Багшийн санал</li>
+              </ul>
+              <a href="course.html" class="btn btn-secondary">Дэлгэрэнгүй</a>
+            </article>
+
+            <article class="course-card">
+              <div class="course-header">
+                <span class="pill alt">Тактик</span>
+                <h3>Бараг заавар ба тактик</h3>
+              </div>
+              <p>Хөдөлгөөнийг урьдчилан харах, хөндлөн санаа, нимгэн шахалт.</p>
+              <div class="price-row">
+                <strong>220,000₮</strong>
+                <span>3 сарын курс</span>
+              </div>
+              <ul>
+                <li>Зорилготой хичээлүүд</li>
+                <li>Тоглоомын хүснэгт</li>
+                <li>Шагналт даалгавар</li>
+              </ul>
+              <a href="course.html" class="btn btn-secondary">Курс үзэх</a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="why-us" class="section alt-bg">
+        <div class="container">
+          <div class="section-heading">
+            <span class="eyebrow">Яагаад бид</span>
+            <h2>Хүүхэд, шинэ суралцагчдад зориулсан аргууд</h2>
+          </div>
+
+          <div class="feature-grid">
+            <div class="feature-card">
+              <div class="icon">♟</div>
+              <h3>Хялбар суралцалт</h3>
+              <p>Бүрэн шинэ хүмүүс ч ойлгох боломжтой, богино тайлбар, энгийн жишээ.</p>
+            </div>
+            <div class="feature-card">
+              <div class="icon">🧠</div>
+              <h3>Санах ойг хөгжүүлэх</h3>
+              <p>Шатрын шийдвэр, дүрэм, найзтайг бодож, логик, стратеги хөгжүүлнэ.</p>
+            </div>
+            <div class="feature-card">
+              <div class="icon">✅</div>
+              <h3>Гүйцэтгэлийг хянах</h3>
+              <p>Даалгавар, ур чадвар, ахицилал, гэрийн даалгавар дээр хяналт тавина.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="payment" class="section payment-section">
+        <div class="container payment-layout">
+          <div>
+            <span class="eyebrow">Төлбөр</span>
+            <h2>Гарын шилжүүлэг / QR</h2>
+            <p>
+              Төлбөрийг гар аргаар хүлээн авна. Үнийн төлбөрийг банкны шилжүүлэг эсвэл QR кодоор хийж, баримт
+              мэйлээр эсвэл тайлбартай хамт илгээнэ.
+            </p>
+            <ul class="check-list">
+              <li>Банк: Монгол Улсын Хаан банк</li>
+              <li>Данс: 1234 5678 9012</li>
+              <li>Тайлбар: Монгол Шатрын Сургууль - Курс</li>
+            </ul>
+            <button class="btn btn-primary" data-open-modal="payment-modal">QR харах</button>
+          </div>
+
+          <div class="qr-panel">
+            <img src="assets/qr.svg" alt="QR код" class="qr-image" />
+            <p>QR кодыг сканнердаж төлбөрөө хийж болно.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="section-heading">
+            <span class="eyebrow">Түгээмэл асуулт</span>
+            <h2>Биднийг сонгосноор юу мэдэх вэ?</h2>
+          </div>
+
+          <div class="faq-list">
+            <div class="faq-item open">
+              <button class="faq-question">Хүүхэд
+              юу сурах вэ?</button>
+              <div class="faq-answer">
+                <p>Шатрын дүрс, хөдөлгөөн, энгийн тактик, хамгаалалт, довтолгооны үндсийг сурах болно.</p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question">Би анхлан суралцагч ч болно уу?</button>
+              <div class="faq-answer">
+                <p>Тийм. Курс нь хүүхэд болон анхлан суралцагчдад зориулагдсан бөгөөд эхний 4-8 хичээлээс эхэлдэг.</p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question">Би хичээлээ хаанаас эхлүүлж болох вэ?</button>
+              <div class="faq-answer">
+                <p>Эхний бүртгэлээ хийж, “Анхан шат” курсыг сонгосноор хичээлээ эхлүүлэх боломжтой.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-row">
+        <p>Монгол Шатрын Сургууль © <span id="year"></span></p>
+        <div class="footer-links">
+          <a href="login.html">Нэвтрэх</a>
+          <a href="admin.html">Админ</a>
+          <a href="#payment">Төлбөр</a>
         </div>
       </div>
-      <nav class="main-nav">
-        <a href="#courses">Курс</a>
-        <a href="#about">Бидний тухай</a>
-        <a href="#contact">Холбоо барих</a>
-        <a href="#member" class="btn secondary">Нэвтрэх</a>
-      </nav>
+    </footer>
+
+    <div class="modal" id="payment-modal" aria-hidden="true">
+      <div class="modal-card">
+        <button class="modal-close" aria-label="Хаах">×</button>
+        <h3>Төлбөрийн QR</h3>
+        <img src="assets/qr.svg" alt="Монгол Шатрын Сургууль QR" class="qr-image large" />
+        <p>Банкны шилжүүлэг хийсний дараа баримтаа дэлгүүрийн админд илгээх хэрэгтэй.</p>
+        <p class="tiny-note">Өнөөдрийн хувилбар нь frontend demo бөгөөд backend-тай баталгаажуулалт хараахан холбогдоогүй.</p>
+      </div>
     </div>
-  </header>
 
-  <main>
-    <section class="hero">
-      <div class="container">
-        <h2>Шатрын анхан шат — Хөгжилтэй бөгөөд амархан</h2>
-        <p>Тоглолт эхлэхэд заавал мэдэх 10 зүйл: дүрсүүд, хөдөлгөөн, энгийн стратеги.</p>
-        <a href="#courses" class="btn primary">Курсуудыг харах</a>
-      </div>
-    </section>
-
-    <section id="courses" class="container courses">
-      <h3>Курсууд</h3>
-      <div class="cards">
-        <article class="card">
-          <h4>Анхан шат — 4 хичээл</h4>
-          <p>Шатрын дүрсүүд, эхний хөдөлгөөнүүд, энгийн тактик. 6 хүртэлх насны хүүхдэд тохиромжтой.</p>
-          <div class="card-actions">
-            <button class="btn primary" data-course="Анхан шат">Суралцаж эхлэх</button>
-            <button class="btn" data-course="Анхан шат">Дэлгэрэнгүй</button>
-          </div>
-        </article>
-
-        <article class="card">
-          <h4>Сургагчийн курс — 8 хичээл</h4>
-          <p>Хөдөлгөөн бүрийн жишээ, энгийн хамгаалалт ба довтолгоо.</p>
-          <div class="card-actions">
-            <button class="btn primary" data-course="Сургагчийн курс">Суралцаж эхлэх</button>
-            <button class="btn" data-course="Сургагчийн курс">Дэлгэрэнгүй</button>
-          </div>
-        </article>
-
-        <article class="card">
-          <h4>Өөртөө тулгарах тактик — 6 хичээл</h4>
-          <p>Шатралтын загварууд, хялбар тактикийг сурах.</p>
-          <div class="card-actions">
-            <button class="btn primary" data-course="Тактик">Суралцаж эхлэх</button>
-            <button class="btn" data-course="Тактик">Дэлгэрэнгүй</button>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <section id="lesson-demo" class="container demo">
-      <h3>Демо хичээл — Шатрын Хаан ба Хулгана</h3>
-      <p>Жишээ: Хаан (K) болон Хулгана (P) хөдөлгөөн бусад дүрсүүд энгийн дүрслэлтэй.</p>
-
-      <div class="board-wrapper">
-        <div id="board" class="board" aria-label="Шатрын самбар"></div>
-        <div class="legend">
-          <p>Тоглоомын дүрслэл нь энгийн бөгөөд суралцалтын зорилготой.</p>
-        </div>
-      </div>
-
-      <div class="lesson-actions">
-        <button id="resetBoard" class="btn">Самбарыг дахин тохируулах</button>
-      </div>
-    </section>
-
-    <section id="about" class="container about">
-      <h3>Бидний тухай</h3>
-      <p>Монгол Шатрын Сургууль нь хүүхдэд ээлтэй хэлбэрээр шатрын үндэсийг заадаг. Бид богино, ойлгомжтой хичээл, гэрийн даалгавар, багшийн зөвлөгөөнд төвлөрнө.</p>
-    </section>
-
-    <section id="contact" class="container contact">
-      <h3>Бүртгүүлэх</h3>
-      <p>Доорх маягтыг бөглөх замаар курсанд бүртгэж, гар утасны дугаараар холбоо барина.</p>
-      <form id="signupForm" class="form">
-        <label>Нэр
-          <input type="text" name="name" id="name" required>
-        </label>
-        <label>Электрон шуудан
-          <input type="email" name="email" id="email" required>
-        </label>
-        <label>Хүүхдийн настай
-          <input type="text" name="age" id="age" placeholder="Жишээ: 7" required>
-        </label>
-        <label>Сонгосон курс
-          <select id="courseSelect" name="course">
-            <option>Анхан шат</option>
-            <option>Сургагчийн курс</option>
-            <option>Тактик</option>
-          </select>
-        </label>
-        <div class="form-actions">
-          <button type="submit" class="btn primary">Бүртгүүлэх</button>
-          <button type="button" id="payBtn" class="btn">Төлбөр хийх (QR/Банк)</button>
-        </div>
-      </form>
-    </section>
-
-    <section id="member" class="container member">
-      <h3>Гишүүдийн хэсэг (Туршилт)</h3>
-      <p>Энд хэрэглэгч нэвтэрсний дараа курс материал, видео, дасгал ажиллах хэсгийг харах ёстой. Одоогоор бэлэн биш — backend шаардлагатай.</p>
-      <p><strong>Санамж:</strong> Нэвтрэх, хэрэглэгчийн баталгаажуулалт, плаформын төлбөр баталгаажуулалт нь сервер талын шийдэл шаарддаг.</p>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <div class="container">
-      <p>Монгол Шатрын Сургууль © <span id="year"></span> — Холбоо: info@example.mn</p>
-    </div>
-  </footer>
-
-  <!-- Modals and hidden bank info -->
-  <div id="bankModal" class="modal" aria-hidden="true">
-    <div class="modal-content">
-      <button class="modal-close" aria-label="Close">✕</button>
-      <h4>Төлбөр — Банк шилжүүлэг / QR</h4>
-      <p>Бид төлбөрийг гар аргаар хүлээн авна. Доорх мэдээллийг ашиглан банк шилжүүлэг хийх эсвэл QR кодыг сканнерлана уу:</p>
-      <ul>
-        <li>Банк: Монгол Улсын Хаан банк</li>
-        <li>Дансны дугаар: 1234 5678 9012</li>
-        <li>Сүлжээний заалт: Монгол Шатрын Сургууль - Курс</li>
-      </ul>
-      <div class="qr-wrap">
-        <img src="assets/qr.svg" alt="QR төлбөрийн жишээ" class="qr">
-      </div>
-      <p class="note">Төлбөр хийсний дараа захиалгын талаар бидэнд мэйл илгээнэ үү. (Төлбөр баталгаажуулалт нь сервер талын ажлыг шаарддаг.)</p>
-    </div>
-  </div>
-
-  <script src="js/scripts.js"></script>
-</body>
+    <script src="js/scripts.js"></script>
+  </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

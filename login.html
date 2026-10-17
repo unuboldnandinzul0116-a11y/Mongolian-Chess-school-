@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="mn">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Нэвтрэх | Монгол Шатрын Сургууль</title>
+    <meta name="description" content="Монгол Шатрын Сургууль — нэвтрэх, бүртгүүлэх, хүүхдийн шатрын сургалтад оролцох." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a href="index.html" class="brand" aria-label="Монгол Шатрын Сургууль">
+          <img src="assets/logo.svg" alt="Монгол Шатрын Сургууль лого" class="brand-logo" />
+          <div>
+            <span class="brand-title">Монгол Шатрын Сургууль</span>
+            <small class="brand-subtitle">Kids & Beginners</small>
+          </div>
+        </a>
+
+        <nav class="main-nav" aria-label="Үндсэн навигаци">
+          <a href="index.html">Нүүр</a>
+          <a href="course.html">Курс</a>
+          <a href="dashboard.html">Хяналтын самбар</a>
+          <a href="admin.html">Админ</a>
+          <a href="login.html" class="btn btn-ghost active">Нэвтрэх</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="auth-main">
+      <section class="auth-shell">
+        <div class="auth-panel">
+          <div class="auth-tabs">
+            <button class="tab-button active" data-tab="login-tab">Нэвтрэх</button>
+            <button class="tab-button" data-tab="signup-tab">Бүртгүүлэх</button>
+          </div>
+
+          <div class="tab-panel active" id="login-tab">
+            <h1>Сайтад нэвтрэх</h1>
+            <form id="login-form" class="form-box">
+              <label>
+                <span>Имэйл</span>
+                <input type="email" name="email" placeholder="name@example.com" required />
+              </label>
+              <label>
+                <span>Нууц үг</span>
+                <input type="password" name="password" placeholder="••••••••" required />
+              </label>
+              <button type="submit" class="btn btn-primary wide-btn">Нэвтрэх</button>
+            </form>
+          </div>
+
+          <div class="tab-panel" id="signup-tab">
+            <h1>Шинэ бүртгэл</h1>
+            <form id="signup-form" class="form-box">
+              <label>
+                <span>Нэр</span>
+                <input type="text" name="name" placeholder="Таны нэр" required />
+              </label>
+              <label>
+                <span>Имэйл</span>
+                <input type="email" name="email" placeholder="name@example.com" required />
+              </label>
+              <label>
+                <span>Нууц үг</span>
+                <input type="password" name="password" placeholder="••••••••" required />
+              </label>
+              <label>
+                <span>Хүүхдийн нас</span>
+                <input type="number" name="age" min="4" max="18" placeholder="7" required />
+              </label>
+              <button type="submit" class="btn btn-primary wide-btn">Бүртгүүлэх</button>
+            </form>
+          </div>
+        </div>
+
+        <aside class="auth-side">
+          <div class="info-card">
+            <span class="eyebrow">Хүүхдийн онлайн суралцах</span>
+            <h2>Хичээлээ эхлүүлж, ахиц дэвшлийг нь хянах</h2>
+            <ul>
+              <li>Богино, хөгжилтэй хичээлүүд</li>
+              <li>Гэрийн даалгавар, шалгалт</li>
+              <li>Суралцахад бэлэн курс</li>
+            </ul>
+            <p class="demo-note">Мэдэгдэл: Нэвтрэлт болон төлбөрийн баталгаажуулалт нь backend шаардлагатай бөгөөд энэ төслийг frontend starter хэлбэрээр ажиллуулж байна.</p>
+          </div>
+        </aside>
+      </section>
+    </main>
+
+    <script src="js/scripts.js"></script>
+  </body>
+</html>

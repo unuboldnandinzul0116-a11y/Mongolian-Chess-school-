@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="mn">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Админ | Монгол Шатрын Сургууль</title>
+    <meta name="description" content="Шатрын сургалтын админ dashboard — захиалга, төлбөр, суралцагчид." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a href="index.html" class="brand" aria-label="Монгол Шатрын Сургууль">
+          <img src="assets/logo.svg" alt="Монгол Шатрын Сургууль лого" class="brand-logo" />
+          <div>
+            <span class="brand-title">Монгол Шатрын Сургууль</span>
+            <small class="brand-subtitle">Kids & Beginners</small>
+          </div>
+        </a>
+
+        <nav class="main-nav" aria-label="Үндсэн навигаци">
+          <a href="index.html">Нүүр</a>
+          <a href="course.html">Курс</a>
+          <a href="dashboard.html">Хяналтын самбар</a>
+          <a href="admin.html" class="active">Админ</a>
+          <a href="login.html" class="btn btn-ghost">Нэвтрэх</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="admin-shell">
+      <div class="container admin-grid">
+        <aside class="admin-sidebar">
+          <h2>Админ ПАНЕЛ</h2>
+          <nav class="admin-nav">
+            <a href="#students" class="active">Суралцагчид</a>
+            <a href="#payments">Төлбөр</a>
+            <a href="#reports">Тайлан</a>
+          </nav>
+        </aside>
+
+        <section class="admin-body">
+          <div class="admin-card">
+            <h3>Суралцагчид</h3>
+            <div class="table-wrap">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Нэр</th>
+                    <th>Курс</th>
+                    <th>Статус</th>
+                    <th>Үйлдэл</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Батбаатар</td>
+                    <td>Анхан шат</td>
+                    <td><span class="status success">Батлагдсан</span></td>
+                    <td><button class="btn btn-ghost small">Дэлгэрэнгүй</button></td>
+                  </tr>
+                  <tr>
+                    <td>Энхтүвшин</td>
+                    <td>Сургагчийн курс</td>
+                    <td><span class="status pending">Хүлээгдэж байна</span></td>
+                    <td><button class="btn btn-ghost small">Шалгах</button></td>
+                  </tr>
+                  <tr>
+                    <td>Уранцэцэг</td>
+                    <td>Тактик</td>
+                    <td><span class="status success">Эцсийн төлбөр</span></td>
+                    <td><button class="btn btn-ghost small">Нээх</button></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <div class="admin-card">
+            <h3>Төлбөрийн хяналт</h3>
+            <div class="payment-list">
+              <div class="payment-row">
+                <div>
+                  <strong>Батбаатар</strong>
+                  <small>Анхан шат — 120,000₮</small>
+                </div>
+                <button class="btn btn-primary small">Батлах</button>
+              </div>
+              <div class="payment-row">
+                <div>
+                  <strong>Энхтүвшин</strong>
+                  <small>Сургагчийн курс — 180,000₮</small>
+                </div>
+                <button class="btn btn-secondary small">Шалгаж байна</button>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <script src="js/scripts.js"></script>
+  </body>
+</html>
